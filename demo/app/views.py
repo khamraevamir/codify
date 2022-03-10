@@ -9,6 +9,20 @@ def index(request):
     return render(request, 'pages/index.html')
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def sign_in(request):
     message = None
     if request.method == 'POST':
