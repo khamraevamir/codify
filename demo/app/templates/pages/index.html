@@ -5,10 +5,32 @@
 {% block content %}
    <!-- Main -->
 
- <div class="p-4 bg-light">
+ <div class="p-4 bg-light min-vh-100">
     <div class="p-4 bg-white rounded-1">
         <h2>Codify</h2>
     </div>
+    <!-- Splide -->
+    <div class="p-4 bg-white rounded-1 mt-4">
+      <div id="image-slider1" class="splide vh-50">
+         <div class="splide__track h-100">
+            <ul class="splide__list h-100">
+               <li class="splide__slide h-100">
+                  <img class="w-100 h-100 object-fit" src="https://thumbs.gfycat.com/GenerousColossalCurlew-size_restricted.gif">
+                </li>
+            </ul>
+         </div>
+      </div>
+  </div>
  </div>
 
+ <script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+
+         var header = new Splide( '#image-slider1' );
+         header.mount()
+
+         
+
+      } );
+ </script>
 {% endblock %}
